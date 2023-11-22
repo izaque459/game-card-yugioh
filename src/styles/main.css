@@ -79,7 +79,8 @@
     padding: 0.3rem;
 }
 
-.card-versus{
+.card-versus__container{
+    margin-top: 5rem;
     display:flex;
     flex-direction: column;
     padding-top: 0.1rem;
