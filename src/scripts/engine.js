@@ -35,7 +35,7 @@ const cardData = [
         name:"Blue Eyes White Dragon",
         type:"Paper",
         img:`${pathImages}dragon.png`,
-        winOf:[1],
+        winOf:[1], 
         loseOf:[2],
     },
 
@@ -43,16 +43,16 @@ const cardData = [
         id:1,
         name:"Dark Magician",
         type:"Rock",
-        img:`${pathImages}magician.png`,
+        img:`${pathImages}Dark Magician.png`,
         winOf:[2],
         loseOf:[0],
     },
 
     {
-        id:0,
-        name:"Exodia",
+        id:2,
+        name:"Exodia The Forbbiden One",
         type:"Scissors",
-        img:`${pathImages}exodia.png`,
+        img:`${pathImages}Exodia.png`,
         winOf:[0],
         loseOf:[1],
     },
@@ -66,6 +66,15 @@ const players = {
     player1 : "player-cards",
 };
 */
+
+
+async function drawSelectCard(index){
+    state.cardSprites.avatar.src = cardData[index].img;
+    state.cardSprites.avatar.style.height = "228px";
+    state.cardSprites.avatar.style.width = "172px"; 
+    state.cardSprites.name.innerHTML = cardData[index].name;
+    state.cardSprites.type.innerText = `Attribute:  ${cardData[index].type}`;
+}
 
 async function getRandomIdCard(){
     const randomIdex = Math.floor(Math.random()*cardData.length);
@@ -83,11 +92,13 @@ async function createCardImage(IdCard, fieldSide){
         cardImage.addEventListener("click", ()=> {
             setCardsField(cardImage.getAttribute("data-id"));
         });
+
+        cardImage.addEventListener("mouseover", ()=>{
+            drawSelectCard(IdCard);
+        });
     }
 
-    cardImage.addEventListener("mouseover", ()=>{
-        drawSelectCard(IdCard);
-    });
+    
 
     return cardImage;
 
