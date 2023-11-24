@@ -31,7 +31,6 @@
 
 
 .container__left{
-    border: 1px solid red;
     width: 35%;
     min-width: 300px;
     display: flex;
@@ -126,10 +125,3 @@
 .card:hover{
     transform: scale(1.2);
 }
-/*
-#card-image{
-    background-size:auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-}*/
