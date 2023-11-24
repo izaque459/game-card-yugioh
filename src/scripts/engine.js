@@ -88,6 +88,11 @@ async function resetDuel(){
     init();
 }
 
+async function playAudio(status){
+    const audio = new Audio(`./src/assets/audios/${status}.wav`);
+    audio.play();
+}
+
 async function updateScore(){
     state.score.scoreBox.innerText = `Win: ${state.score.playerScore} | Lose: ${state.score.computerScore}`;
 }
@@ -98,11 +103,13 @@ async function checkDuelResults(playerCardId,computerCardId){
     
     if(playerCard.winOf.includes(computerCardId)){
         duelResults = "Ganhou";
+        await playAudio("win");
         state.score.playerScore++;
     }
 
     if(playerCard.loseOf.includes(computerCardId)){
         duelResults = "Perdeu";
+        await playAudio("lose");
         state.score.computerScore++;
     }
 
