@@ -34,11 +34,11 @@ const pathImages = "./src/assets/icons/";
 const cardData = [
     {
         id:0,
-        name:"Blue Eyes White Dragon",
+        name:"Battle Steer",
         type:"Paper",
-        img:`${pathImages}dragon.png`,
-        winOf:[1], 
-        loseOf:[2],
+        img:`${pathImages}Battle Steer.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -46,8 +46,8 @@ const cardData = [
         name:"Dark Magician",
         type:"Rock",
         img:`${pathImages}Dark Magician.png`,
-        winOf:[2],
-        loseOf:[0],
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -55,10 +55,250 @@ const cardData = [
         name:"Exodia The Forbbiden One",
         type:"Scissors",
         img:`${pathImages}Exodia.png`,
-        winOf:[0],
-        loseOf:[1],
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
     },
 
+    {
+        id:3,
+        name:"Beaver Warrior",
+        type:"Paper",
+        img:`${pathImages}Beaver Warrior.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:4,
+        name:"Black Luster Soldier",
+        type:"Rock",
+        img:`${pathImages}Black Luster Soldier.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:5,
+        name:"Black Magician of Chaos",
+        type:"Scissors",
+        img:`${pathImages}Black Magician of Chaos.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+
+    {
+        id:6,
+        name:"Black Skull Dragon",
+        type:"Paper",
+        img:`${pathImages}Black Skull Dragon.png`,
+         winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:7,
+        name:"Catapult Turtle",
+        type:"Rock",
+        img:`${pathImages}Catapult Turtle.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:8,
+        name:"Celtic Guardian",
+        type:"Scissors",
+        img:`${pathImages}Celtic Guardian.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+
+    {
+        id:9,
+        name:"Curse of Dragon",
+        type:"Paper",
+        img:`${pathImages}Curse of Dragon.png`,
+         winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:10,
+        name:"Dark Sage",
+        type:"Rock",
+        img:`${pathImages}Dark Sage.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:11,
+        name:"Dragon Master Knight",
+        type:"Scissors",
+        img:`${pathImages}Dragon Master Knight.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+
+    {
+        id:12,
+        name:"Feral Imp",
+        type:"Paper",
+        img:`${pathImages}Feral Imp.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:13,
+        name:"Gaia The Dragon Champion",
+        type:"Rock",
+        img:`${pathImages}Gaia The Dragon Champion.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:14,
+        name:"Gaia The Fierce Knight",
+        type:"Scissors",
+        img:`${pathImages}Gaia The Fierce Knight.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+
+    {
+        id:15,
+        name:"Giant Soldier of Stone",
+        type:"Paper",
+        img:`${pathImages}Giant Soldier of Stone.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:16,
+        name:"Griffore",
+        type:"Rock",
+        img:`${pathImages}Griffore.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:17,
+        name:"Horn Imp",
+        type:"Scissors",
+        img:`${pathImages}Horn Imp.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+    {
+        id:18,
+        name:"Koumori Dragon",
+        type:"Paper",
+        img:`${pathImages}Koumori Dragon.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:19,
+        name:"Kuriboh",
+        type:"Rock",
+        img:`${pathImages}Kuriboh.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:20,
+        name:"Mammoth Graveyard",
+        type:"Scissors",
+        img:`${pathImages}Mammoth Graveyard.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+
+    {
+        id:21,
+        name:"Mystical Elf",
+        type:"Paper",
+        img:`${pathImages}Mystical Elf.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:22,
+        name:"Rude Kaiser",
+        type:"Rock",
+        img:`${pathImages}Rude Kaiser.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:23,
+        name:"Sangan",
+        type:"Scissors",
+        img:`${pathImages}Sangan.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+
+    {
+        id:24,
+        name:"Silver Fang",
+        type:"Paper",
+        img:`${pathImages}Silver Fang.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:25,
+        name:"Summoned Skull",
+        type:"Rock",
+        img:`${pathImages}Summoned Skull.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:26,
+        name:"Time Wizard",
+        type:"Scissors",
+        img:`${pathImages}Time Wizard.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
+    {
+        id:27,
+        name:"Torike",
+        type:"Paper",
+        img:`${pathImages}Torike.png`,
+        winOf:[1,4,7,10,13,16,19,22,25,28], 
+        loseOf:[2,5,8,11,14,17,23,26,29],
+    },
+
+    {
+        id:28,
+        name:"Winged Dragon, Guardian",
+        type:"Rock",
+        img:`${pathImages}Winged Dragon, Guardian of the Fortress.png`,
+        winOf:[2,5,8,11,14,17,23,26,29],
+        loseOf:[0,3,6,9,12,15,18,21,24,27],
+    },
+
+    {
+        id:29,
+        name:"Zombie Warrior",
+        type:"Scissors",
+        img:`${pathImages}Zombie Warrior.png`,
+        winOf:[0,3,6,9,12,15,18,21,24,27],
+        loseOf:[1,4,7,10,13,16,19,22,25,28],
+    },
 ]
 
 
