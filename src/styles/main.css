@@ -129,6 +129,10 @@ button, a, img:hover,button:hover,a:hover{
     border-radius:8px;
 }
 
+.card-infield:hover{
+    transform: scale(2.3);
+}
+
 .card{
     transition: transform  0.2s;
 }
