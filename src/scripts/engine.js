@@ -37,8 +37,8 @@ const cardData = [
         name:"Battle Steer",
         type:"Paper",
         img:`${pathImages}Battle Steer.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -46,8 +46,8 @@ const cardData = [
         name:"Dark Magician",
         type:"Rock",
         img:`${pathImages}Dark Magician.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -55,8 +55,8 @@ const cardData = [
         name:"Exodia The Forbbiden One",
         type:"Scissors",
         img:`${pathImages}Exodia.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -64,8 +64,8 @@ const cardData = [
         name:"Beaver Warrior",
         type:"Paper",
         img:`${pathImages}Beaver Warrior.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -73,8 +73,8 @@ const cardData = [
         name:"Black Luster Soldier",
         type:"Rock",
         img:`${pathImages}Black Luster Soldier.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -82,8 +82,8 @@ const cardData = [
         name:"Black Magician of Chaos",
         type:"Scissors",
         img:`${pathImages}Black Magician of Chaos.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -91,8 +91,8 @@ const cardData = [
         name:"Black Skull Dragon",
         type:"Paper",
         img:`${pathImages}Black Skull Dragon.png`,
-         winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -100,8 +100,8 @@ const cardData = [
         name:"Catapult Turtle",
         type:"Rock",
         img:`${pathImages}Catapult Turtle.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -109,8 +109,8 @@ const cardData = [
         name:"Celtic Guardian",
         type:"Scissors",
         img:`${pathImages}Celtic Guardian.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -118,8 +118,8 @@ const cardData = [
         name:"Curse of Dragon",
         type:"Paper",
         img:`${pathImages}Curse of Dragon.png`,
-         winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -127,8 +127,8 @@ const cardData = [
         name:"Dark Sage",
         type:"Rock",
         img:`${pathImages}Dark Sage.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -136,8 +136,8 @@ const cardData = [
         name:"Dragon Master Knight",
         type:"Scissors",
         img:`${pathImages}Dragon Master Knight.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -145,8 +145,8 @@ const cardData = [
         name:"Feral Imp",
         type:"Paper",
         img:`${pathImages}Feral Imp.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -154,8 +154,8 @@ const cardData = [
         name:"Gaia The Dragon Champion",
         type:"Rock",
         img:`${pathImages}Gaia The Dragon Champion.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -163,8 +163,8 @@ const cardData = [
         name:"Gaia The Fierce Knight",
         type:"Scissors",
         img:`${pathImages}Gaia The Fierce Knight.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -172,8 +172,8 @@ const cardData = [
         name:"Giant Soldier of Stone",
         type:"Paper",
         img:`${pathImages}Giant Soldier of Stone.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -181,8 +181,8 @@ const cardData = [
         name:"Griffore",
         type:"Rock",
         img:`${pathImages}Griffore.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -190,16 +190,16 @@ const cardData = [
         name:"Horn Imp",
         type:"Scissors",
         img:`${pathImages}Horn Imp.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
     {
         id:18,
         name:"Koumori Dragon",
         type:"Paper",
         img:`${pathImages}Koumori Dragon.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -207,8 +207,8 @@ const cardData = [
         name:"Kuriboh",
         type:"Rock",
         img:`${pathImages}Kuriboh.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -216,8 +216,8 @@ const cardData = [
         name:"Mammoth Graveyard",
         type:"Scissors",
         img:`${pathImages}Mammoth Graveyard.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -225,8 +225,8 @@ const cardData = [
         name:"Mystical Elf",
         type:"Paper",
         img:`${pathImages}Mystical Elf.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -234,8 +234,8 @@ const cardData = [
         name:"Rude Kaiser",
         type:"Rock",
         img:`${pathImages}Rude Kaiser.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -243,8 +243,8 @@ const cardData = [
         name:"Sangan",
         type:"Scissors",
         img:`${pathImages}Sangan.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 
     {
@@ -252,8 +252,8 @@ const cardData = [
         name:"Silver Fang",
         type:"Paper",
         img:`${pathImages}Silver Fang.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -261,8 +261,8 @@ const cardData = [
         name:"Summoned Skull",
         type:"Rock",
         img:`${pathImages}Summoned Skull.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -270,16 +270,16 @@ const cardData = [
         name:"Time Wizard",
         type:"Scissors",
         img:`${pathImages}Time Wizard.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
     {
         id:27,
         name:"Torike",
         type:"Paper",
         img:`${pathImages}Torike.png`,
-        winOf:[1,4,7,10,13,16,19,22,25,28], 
-        loseOf:[2,5,8,11,14,17,23,26,29],
+        advantageOver:[1,4,7,10,13,16,19,22,25,28], 
+        disadvantageFor:[2,5,8,11,14,17,23,26,29],
     },
 
     {
@@ -287,8 +287,8 @@ const cardData = [
         name:"Winged Dragon, Guardian",
         type:"Rock",
         img:`${pathImages}Winged Dragon, Guardian of the Fortress.png`,
-        winOf:[2,5,8,11,14,17,23,26,29],
-        loseOf:[0,3,6,9,12,15,18,21,24,27],
+        advantageOver:[2,5,8,11,14,17,20,23,26,29],
+        disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
     },
 
     {
@@ -296,8 +296,8 @@ const cardData = [
         name:"Zombie Warrior",
         type:"Scissors",
         img:`${pathImages}Zombie Warrior.png`,
-        winOf:[0,3,6,9,12,15,18,21,24,27],
-        loseOf:[1,4,7,10,13,16,19,22,25,28],
+        advantageOver:[0,3,6,9,12,15,18,21,24,27],
+        disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
     },
 ]
 
@@ -360,13 +360,13 @@ async function checkDuelResults(playerCardId,computerCardId){
     let duelResults = "Empate";
     let playerCard = cardData[playerCardId];
     
-    if(playerCard.winOf.includes(computerCardId)){
+    if(playerCard.advantageOver.includes(computerCardId)){
         duelResults = "Ganhou";
         await playAudio("win");
         state.score.playerScore++;
     }
 
-    if(playerCard.loseOf.includes(computerCardId)){
+    if(playerCard.disadvantageFor.includes(computerCardId)){
         duelResults = "Perdeu";
         await playAudio("lose");
         state.score.computerScore++;
