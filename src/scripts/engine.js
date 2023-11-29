@@ -390,7 +390,11 @@ async function updateScore(){
 async function checkDuelResults(playerCardId,computerCardId){
     let duelResults = "Empate";
     let playerCard = cardData[playerCardId];
-    let computerCard = cardData[computerCardId];
+
+    let playerAttack = cardData[playerCardId].attack;
+    let computerAttack = cardData[computerCardId].attack;
+    let bonus = 1500;
+ 
     
     /* if(playerCard.advantageOver.includes(computerCardId)){
         duelResults = "Ganhou";
@@ -404,13 +408,22 @@ async function checkDuelResults(playerCardId,computerCardId){
         state.score.computerScore++;
     }*/
 
-    if(playerCard.attack>computerCard.attack){
+    if(playerCard.advantageOver.includes(computerCardId)){
+        playerAttack = playerAttack + bonus;   
+     }
+
+    if(playerCard.disadvantageFor.includes(computerCardId)){
+        computerAttack = computerAttack + bonus;
+    }
+
+
+    if(playerAttack>computerAttack){
         duelResults = "Ganhou";
         await playAudio("win");
         state.score.playerScore++;
     }
 
-    if(playerCard.attack<computerCard.attack){
+    if(playerAttack<computerAttack){
         duelResults = "Perdeu";
         await playAudio("lose");
         state.score.computerScore++;
