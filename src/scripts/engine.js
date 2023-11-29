@@ -39,6 +39,8 @@ const cardData = [
         img:`${pathImages}Battle Steer.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1800,
+
     },
 
     {
@@ -48,6 +50,7 @@ const cardData = [
         img:`${pathImages}Dark Magician.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 2500,
     },
 
     {
@@ -57,6 +60,7 @@ const cardData = [
         img:`${pathImages}Exodia.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 1000,
     },
 
     {
@@ -66,6 +70,7 @@ const cardData = [
         img:`${pathImages}Beaver Warrior.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1200,
     },
 
     {
@@ -75,6 +80,7 @@ const cardData = [
         img:`${pathImages}Black Luster Soldier.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 3000,
     },
 
     {
@@ -84,6 +90,7 @@ const cardData = [
         img:`${pathImages}Black Magician of Chaos.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 2800,
     },
 
     {
@@ -93,6 +100,7 @@ const cardData = [
         img:`${pathImages}Black Skull Dragon.png`,
          advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 3200,
     },
 
     {
@@ -102,6 +110,7 @@ const cardData = [
         img:`${pathImages}Catapult Turtle.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 1000,
     },
 
     {
@@ -111,6 +120,7 @@ const cardData = [
         img:`${pathImages}Celtic Guardian.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 1400,
     },
 
     {
@@ -120,6 +130,7 @@ const cardData = [
         img:`${pathImages}Curse of Dragon.png`,
          advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 2000,
     },
 
     {
@@ -129,6 +140,7 @@ const cardData = [
         img:`${pathImages}Dark Sage.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 2800,
     },
 
     {
@@ -138,6 +150,7 @@ const cardData = [
         img:`${pathImages}Dragon Master Knight.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 5000,
     },
 
     {
@@ -147,6 +160,7 @@ const cardData = [
         img:`${pathImages}Feral Imp.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1300,
     },
 
     {
@@ -156,6 +170,7 @@ const cardData = [
         img:`${pathImages}Gaia The Dragon Champion.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 2600,
     },
 
     {
@@ -165,6 +180,7 @@ const cardData = [
         img:`${pathImages}Gaia The Fierce Knight.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 2300,
     },
 
     {
@@ -174,6 +190,7 @@ const cardData = [
         img:`${pathImages}Giant Soldier of Stone.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1300,
     },
 
     {
@@ -183,6 +200,7 @@ const cardData = [
         img:`${pathImages}Griffore.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 1200,
     },
 
     {
@@ -192,6 +210,7 @@ const cardData = [
         img:`${pathImages}Horn Imp.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 1300,
     },
     {
         id:18,
@@ -200,6 +219,7 @@ const cardData = [
         img:`${pathImages}Koumori Dragon.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1500,
     },
 
     {
@@ -209,6 +229,7 @@ const cardData = [
         img:`${pathImages}Kuriboh.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 300,
     },
 
     {
@@ -218,6 +239,7 @@ const cardData = [
         img:`${pathImages}Mammoth Graveyard.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 1200,
     },
 
     {
@@ -227,6 +249,7 @@ const cardData = [
         img:`${pathImages}Mystical Elf.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 800,
     },
 
     {
@@ -236,6 +259,7 @@ const cardData = [
         img:`${pathImages}Rude Kaiser.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 1800,
     },
 
     {
@@ -245,6 +269,7 @@ const cardData = [
         img:`${pathImages}Sangan.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 1000,
     },
 
     {
@@ -254,6 +279,7 @@ const cardData = [
         img:`${pathImages}Silver Fang.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1200,
     },
 
     {
@@ -263,6 +289,7 @@ const cardData = [
         img:`${pathImages}Summoned Skull.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 2500,
     },
 
     {
@@ -272,6 +299,7 @@ const cardData = [
         img:`${pathImages}Time Wizard.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 500,
     },
     {
         id:27,
@@ -280,6 +308,7 @@ const cardData = [
         img:`${pathImages}Torike.png`,
         advantageOver:[1,4,7,10,13,16,19,22,25,28], 
         disadvantageFor:[2,5,8,11,14,17,23,26,29],
+        attack: 1200,
     },
 
     {
@@ -289,6 +318,7 @@ const cardData = [
         img:`${pathImages}Winged Dragon, Guardian of the Fortress.png`,
         advantageOver:[2,5,8,11,14,17,20,23,26,29],
         disadvantageFor:[0,3,6,9,12,15,18,21,24,27],
+        attack: 1400,
     },
 
     {
@@ -298,6 +328,7 @@ const cardData = [
         img:`${pathImages}Zombie Warrior.png`,
         advantageOver:[0,3,6,9,12,15,18,21,24,27],
         disadvantageFor:[1,4,7,10,13,16,19,22,25,28],
+        attack: 1200,
     },
 ]
 
@@ -359,14 +390,27 @@ async function updateScore(){
 async function checkDuelResults(playerCardId,computerCardId){
     let duelResults = "Empate";
     let playerCard = cardData[playerCardId];
+    let computerCard = cardData[computerCardId];
     
-    if(playerCard.advantageOver.includes(computerCardId)){
+    /* if(playerCard.advantageOver.includes(computerCardId)){
         duelResults = "Ganhou";
         await playAudio("win");
         state.score.playerScore++;
     }
 
     if(playerCard.disadvantageFor.includes(computerCardId)){
+        duelResults = "Perdeu";
+        await playAudio("lose");
+        state.score.computerScore++;
+    }*/
+
+    if(playerCard.attack>computerCard.attack){
+        duelResults = "Ganhou";
+        await playAudio("win");
+        state.score.playerScore++;
+    }
+
+    if(playerCard.attack<computerCard.attack){
         duelResults = "Perdeu";
         await playAudio("lose");
         state.score.computerScore++;
